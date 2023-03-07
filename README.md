@@ -1,3 +1,14 @@
+# Gelato Hackathon
+- Gelato contract: https://goerli.etherscan.io/address/0x54C322e4D5803370E084f40447C740c86fb8FacB#code
+- GELATO_CONTRACT MUMBAI  = '0xceE8EBe0C46ffF30787B1578fBD42E407bcB6D5C'
+# Demo
+- sender: 0xB676DcbCc37571FB1205f5e03885110626DB0b43
+- receiver: 0x0f35507Fa1F080fA79C3bAEC783fa4317875D276
+
+
+# Gelato Source
+You can read the blog at: https://medium.com/@javier_donoso/gelato-v2-superfluid-eb13166ac414
+and see the walkthrough video: https://www.youtube.com/watch?v=OphQ2BdXJDQ&t=1s
 contracts live here https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.4+commit.c7e474f2.js
 
 ADD arcana to react app

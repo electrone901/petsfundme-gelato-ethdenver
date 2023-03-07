@@ -13,6 +13,7 @@ import Notifications from './components/notifications/Notifications'
 import Web3Modal from 'web3modal'
 import UAuth from '@uauth/js'
 import ABI from './artifacts/contracts/CommunityPets.sol/CommunityPets.json'
+import ABI_GELATO from './ABI_GELATO.json'
 import ABIHyperSpaceDeployed from './artifacts/contracts/CommunityPets.sol/CommunityPetsHyperSpaceDeployed.json'
 import ABIMantleDeployed from './artifacts/contracts/CommunityPets.sol/CommunityPetsMantleDeployed.json'
 import { Auth, useAuth } from '@arcana/auth-react'
@@ -20,8 +21,13 @@ import { Auth, useAuth } from '@arcana/auth-react'
 const { ethers } = require('ethers')
 
 function App() {
+  const GELATO_CONTRACT = '0xceE8EBe0C46ffF30787B1578fBD42E407bcB6D5C'
+
+  //  I need to connect FE with GELATO_CONTRACT than  createA Stream, than stopStream and show it on the gelato gateway https://ops-interface-vue-git-feature-search-gelato.vercel.app/task/0x214fbd176b22e9a1079201c277aac6344e8ca7158e46c596cff39953da99b2f4?chainId=5
   const [currentAccount, setCurrentAccount] = useState('')
   const [contract, setContract] = useState(null)
+  const [contractGelato, setContractGelato] = useState(null)
+  console.log('🚀 ~ file: App.js:30 ~ App ~ contractGelato:', contractGelato)
   const [donateNfts, setDonateNfts] = useState(false)
   const [hasProfile, setHasProfile] = useState('')
   const [allProfiles, setAllProfiles] = useState([])
@@ -79,6 +85,13 @@ function App() {
       signer,
     )
     setContract(contract)
+
+    let contractGelato = new ethers.Contract(
+      GELATO_CONTRACT,
+      ABI_GELATO,
+      signer,
+    )
+    setContractGelato(contractGelato)
 
     // hyperspace  0x71f5338032576962c55c31ED4cF4688D1a1c6b1A
     // Mantle  0x5AAf92530aCA44A63C06a7c014d7610BC7D2D9c7
@@ -148,17 +161,6 @@ function App() {
           getTransactions={getTransactions}
           auth={auth}
         />
-        <div>
-          {auth.loading ? (
-            'Loading'
-          ) : auth.isLoggedIn ? (
-            ''
-          ) : (
-            <div>
-              <Auth externalWallet={true} theme={'light'} onLogin={onLogin} />
-            </div>
-          )}
-        </div>
 
         <Route exact path="/">
           <HomeGallery
