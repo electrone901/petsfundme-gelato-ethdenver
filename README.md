@@ -1,24 +1,18 @@
 # Gelato Hackathon
+
 - Gelato contract: https://goerli.etherscan.io/address/0x54C322e4D5803370E084f40447C740c86fb8FacB#code
-- GELATO_CONTRACT MUMBAI  = '0xceE8EBe0C46ffF30787B1578fBD42E407bcB6D5C'
+- GELATO_CONTRACT MUMBAI = '0xceE8EBe0C46ffF30787B1578fBD42E407bcB6D5C'
+
 # Demo
+
 - sender: 0xB676DcbCc37571FB1205f5e03885110626DB0b43
 - receiver: 0x0f35507Fa1F080fA79C3bAEC783fa4317875D276
 
-
 # Gelato Source
+
 You can read the blog at: https://medium.com/@javier_donoso/gelato-v2-superfluid-eb13166ac414
 and see the walkthrough video: https://www.youtube.com/watch?v=OphQ2BdXJDQ&t=1s
 contracts live here https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.4+commit.c7e474f2.js
-
-ADD arcana to react app
-
-- Follow tis tutorial https://docs.arcana.network/howto/integrate_auth/integrate_wallet_react.html
-- login using discord
-- Should take you to the dashboard https://dashboard.arcana.network/apps
-- Create New App
-
-here is my dashboard for streams sf https://app.superfluid.finance/
 
 ## Inspiration
 
@@ -107,3 +101,16 @@ DEMO
   https://app.superfluid.finance/stream/polygon-mumbai/0x11760db13ae3aa5bca17fc7d62172be2a2ea9c11-0x7214859dd1750d31eda889ba44d432f9805ff3f7-0x5d8b4c2554aeb7e86f387b4d6c00ac33499ed01f-0.0
 
 - Valist https://app.valist.io/main-account/pets-found-me
+
+### NOTES:
+
+#### Added Gelato and superfluid to open & closed string(Might need some work)
+
+ADD arcana to react app
+
+- Follow tis tutorial https://docs.arcana.network/howto/integrate_auth/integrate_wallet_react.html
+- login using discord
+- Should take you to the dashboard https://dashboard.arcana.network/apps
+- Create New App
+
+here is my dashboard for streams sf https://app.superfluid.finance/
