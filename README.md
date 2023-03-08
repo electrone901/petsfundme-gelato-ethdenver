@@ -105,7 +105,11 @@ DEMO
 ### NOTES:
 
 #### Added Gelato and superfluid to open & closed string(Might need some work)
-
+- To see the `stopCreatedTask`  https://ops-interface-vue-git-feature-search-gelato.vercel.app/task/0x2171f26b735abc42aecabe4796500194a3a88087a8bfca5d4b11f98b45499390?chainId=5
+- Exlorer https://goerli.etherscan.io/address/0xB676DcbCc37571FB1205f5e03885110626DB0b43
+- Exlorer https://mumbai.polygonscan.com/token/0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f
+- Verified contract https://goerli.etherscan.io/address/0xcfa132e353cb4e398080b9700609bb008eceb125#code
+- superfluid dashboard to create streams, stopStreams & view them https://app.superfluid.finance/
 ADD arcana to react app
 
 - Follow tis tutorial https://docs.arcana.network/howto/integrate_auth/integrate_wallet_react.html
